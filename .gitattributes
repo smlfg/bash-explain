@@ -1,0 +1,22 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# Explicitly declare shell scripts to be text with LF
+*.sh text eol=lf
+bash-explain.sh text eol=lf
+
+# Markdown always LF
+*.md text eol=lf
+README.md text eol=lf
+LICENSE text eol=lf
+CHANGELOG.md text eol=lf
+
+# License file linguist-friendly
+LICENSE linguist-detectable=true
+
+# Exclude Projek-Managment from language stats (private artifacts)
+Projek-Managment linguist-generated=true
+Projek-Managment linguist-documentation=false
+
+# Diff settings for shell scripts
+*.sh diff=bash
